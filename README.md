@@ -25,3 +25,5 @@
 2. Rather than a color change from black to white, each interaction should randomize the square’s RGB value entirely.
 3. Additionally, implement a progressive darkening effect where each interaction adds 10% more black or color to the square. The objective is to achieve a completely black square only after ten interactions.
 4. You can choose to do either one or both of these challenges, it’s up to you.
+### Source:
+https://www.theodinproject.com/lessons/foundations-etch-a-sketch
