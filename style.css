@@ -4,8 +4,9 @@
 }
 
 .grid-item {
-  flex: 1 0 6.25%;
   background-color: rebeccapurple;
-  width: 100px;
-  height: 100px;
+  /* flex: 0 0 6.25%; */
+  /* width: 100px; */
+  /* height: 100px; */
+  border: 1px solid black;
 }
