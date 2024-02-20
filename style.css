@@ -4,3 +4,6 @@ div {
   flex-direction: row;
   flex-wrap: wrap;
 }
+div:hover {
+  background-color: limegreen;
+}
