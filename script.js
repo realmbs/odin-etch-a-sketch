@@ -1,5 +1,10 @@
 const container = document.querySelector('.container');
 // const resetButton = document.querySelector('.reset-button');
+addEventListener('mouseover', (e) => {
+  if (e.target.classList.contains('grid-item')) {
+    e.target.style.backgroundColor = 'limegreen';
+  }
+})
 
 const createGridItems = (l, h = 1) => {
   for (let i = 0; i < (l * h); i++) {
