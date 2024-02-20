@@ -1,0 +1,6 @@
+div {
+  background-color: rebeccapurple;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
