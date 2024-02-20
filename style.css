@@ -1,9 +1,11 @@
-div {
-  background-color: rebeccapurple;
+.container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
-div:hover {
-  background-color: limegreen;
+
+.grid-item {
+  flex: 1 0 6.25%;
+  background-color: rebeccapurple;
+  width: 100px;
+  height: 100px;
 }

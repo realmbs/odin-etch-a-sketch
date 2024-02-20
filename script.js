@@ -1,9 +1,12 @@
 const container = document.querySelector('.container');
+// const resetButton = document.querySelector('.reset-button');
 
-for (let i = 0; i <= 32; i++) {
-  const newDiv = document.createElement('div');
-  newDiv.style.width = '100px';
-  newDiv.style.height = '100px';
-  newDiv.style.border = '1px solid black';
-  container.appendChild(newDiv);
+const createGridItems = (l, h = 1) => {
+  for (let i = 0; i < (l * h); i++) {
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('grid-item');
+    container.appendChild(newDiv);
+  }
 }
+
+createGridItems(16);
