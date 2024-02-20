@@ -1,5 +1,24 @@
 const container = document.querySelector('.container');
-// const resetButton = document.querySelector('.reset-button');
+const resetButton = document.querySelector('.reset--button');
+const startButton = document.querySelector('.start--button');
+const inputWidth = document.querySelector('.width--input');
+const inputHeight = document.querySelector('.height--input');
+
+// reset to initial conditions
+resetButton.addEventListener('click', () => {
+  const gridItems = document.querySelectorAll('.grid-item');
+  gridItems.forEach(i => {
+    i.style.backgroundColor = 'rebeccapurple';
+  });
+  inputWidth.value = 'Enter width';
+  inputHeight.value = 'Enter height';
+})
+
+startButton.addEventListener('click', () => {
+
+})
+
+
 addEventListener('mouseover', (e) => {
   if (e.target.classList.contains('grid-item')) {
     e.target.style.backgroundColor = 'limegreen';
