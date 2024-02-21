@@ -5,10 +5,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-.grid-item {
-  background-color: rebeccapurple;
-  border: 1px solid black;
-}
 .start--button {
   background-color: rebeccapurple;
   border: 1px solid black;

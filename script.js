@@ -5,13 +5,7 @@ const startButton = document.querySelector('.start--button');
 // reset to initial conditions
 resetButton.addEventListener('click', () => {
   const gridItems = document.querySelectorAll('.grid-item');
-  const inputWidth = document.querySelector('.width--input');
-  const inputHeight = document.querySelector('.height--input');
-  gridItems.forEach(i => {
-    i.style.backgroundColor = 'rebeccapurple';
-  });
-  inputWidth.value = 'Enter width';
-  inputHeight.value = 'Enter height';
+  gridItems.forEach(i => i.remove());
 })
 
 // get width + height from input, call createGridItems, redirect if > 100
@@ -27,13 +21,24 @@ startButton.addEventListener('click', () => {
 
 addEventListener('mouseover', (e) => {
   if (e.target.classList.contains('grid-item')) {
-    e.target.style.backgroundColor = 'limegreen';
+    e.target.style.backgroundColor = 'black';
+    e.target.style.border = '1px solid black';
   }
 })
+
+const generateRandomColor = () => {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+}
 
 const createGridItems = (w, h = 1) => {
   for (let i = 0; i < (w * h); i++) {
     const newDiv = document.createElement('div');
+    const randomColor = generateRandomColor();
+    newDiv.style.backgroundColor = randomColor;
+    newDiv.style.border = `1px solid ${randomColor}`;
     newDiv.classList.add('grid-item');
     newDiv.style.width = `${100 / w}px`;
     newDiv.style.height = `${100 / h}px`;
