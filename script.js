@@ -12,10 +12,14 @@ resetButton.addEventListener('click', () => {
 startButton.addEventListener('click', () => {
   const inputWidth = Number(prompt('Enter width'));
   const inputHeight = Number(prompt('Enter height'));
-  if (inputWidth < 100 && inputHeight < 100) {
+  if (inputWidth <= 100 && inputHeight <= 100) {
     createGridItems(inputWidth, inputHeight);
-  } else if (inputWidth >= 100 || inputHeight >= 100) {
+  } else if (inputWidth > 100 || inputHeight > 100) {
     alert('Please enter a number less than 100');
+  } else if (inputWidth <= 0 || inputHeight <= 0) {
+    alert('Please enter a number greater than 0');
+  } else {
+    alert('Please enter a valid number');
   }
 })
 
