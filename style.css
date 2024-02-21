@@ -1,21 +1,31 @@
+* {
+  font-family: 'Helvetica', sans-serif;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
 }
-
 .grid-item {
   background-color: rebeccapurple;
-  /* flex: 0 0 6.25%; */
-  /* width: 100px; */
-  /* height: 100px; */
   border: 1px solid black;
 }
 .start--button {
-
+  background-color: rebeccapurple;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.start--button:hover {
+  background-color: white;
+  border: 1px solid rebeccapurple;
 }
 .reset--button {
-
+  background-color: #FF0000;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-bottom: 10px;
 }
-.dimensions--form
-.width--input
-.height--input
+.reset--button:hover {
+  background-color: white;
+  border: 1px solid #FF0000
+}
